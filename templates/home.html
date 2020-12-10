@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>This is {{ home }}</h1>
+<br>
+<a href="{% url 'result' %}">Go to Result Page</a>
+<br>
+<br>
+<form action="{% url 'result' %}">
+    <textarea name="article" cols="150" rows="20">
+
+    </textarea>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
